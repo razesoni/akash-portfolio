@@ -12,13 +12,13 @@ const portfolioData = {
    *  PERSONAL
    * ------------------------------------------------------- */
   personal: {
-    name: "[YOUR NAME]",
+    name: "Akash Kumar Singh",
     role: "Data Scientist & Machine Learning Enthusiast",
     tagline: "I build data-driven applications, machine learning solutions, and intelligent systems that solve real-world problems.",
-    location: "[YOUR LOCATION]",
-    email: "[YOUR EMAIL]",
+    location: "Jamshedpur, India",
+    email: "akash27590@gmail.com",
     profileImage: "assets/images/profile.jpg",
-    resume: "assets/resume/resume.pdf",
+    resume: "assets/resume/akash_resume.pdf",
     availability: "Open to Opportunities",
     aboutParagraphs: [
       "I'm a final-year B.Tech student who spends more time in Jupyter notebooks than I probably should, currently focused on data science, machine learning, and building software that actually gets used rather than just demoed.",
@@ -27,8 +27,8 @@ const portfolioData = {
     ],
     quickFacts: [
       { label: "Education", value: "B.Tech" },
-      { label: "Specialization", value: "Data Science / AI" },
-      { label: "Location", value: "[YOUR LOCATION]" },
+      { label: "Specialization", value: "Computer Science & Engineering" },
+      { label: "Location", value: "Jamshedpur, India" },
       { label: "Focus", value: "ML · Data Science · AI" },
       { label: "Hobbies", value: "Art & Illustration" },
       { label: "Availability", value: "Open to Opportunities" }
@@ -40,10 +40,10 @@ const portfolioData = {
    *  Leave a value empty ("") to hide that link automatically.
    * ------------------------------------------------------- */
   social: {
-    github: "[GITHUB URL]",
-    linkedin: "[LINKEDIN URL]",
-    email: "[YOUR EMAIL]",
-    kaggle: "[KAGGLE URL]",
+    github: "https://github.com/razesoni",
+    linkedin: "https://www.linkedin.com/in/akash-kumar-277750337",
+    email: "akash27590@gmail.com",
+    kaggle: "https://www.kaggle.com/razesoni",
     leetcode: "",
     hackerrank: "",
     codechef: ""
@@ -53,11 +53,11 @@ const portfolioData = {
    *  SKILLS
    * ------------------------------------------------------- */
   skills: {
-    programming: ["Python", "JavaScript", "SQL", "C / C++"],
+    programming: ["Python", "JavaScript", "SQL"],
     dataScience: ["Pandas", "NumPy", "Matplotlib", "Seaborn", "Scikit-learn"],
     machineLearning: ["Regression", "Classification", "Clustering", "Feature Engineering", "Model Evaluation", "Hyperparameter Tuning"],
     ai: ["LLMs", "RAG", "Embeddings", "Whisper", "Generative AI", "NLP"],
-    webDevelopment: ["HTML", "CSS", "JavaScript", "Flask", "Django", "REST APIs"],
+    webDevelopment: ["HTML", "CSS", "JavaScript", "Flask", "REST APIs"],
     tools: ["Git", "GitHub", "Jupyter", "VS Code", "Docker", "Postman"]
   },
 
@@ -90,7 +90,7 @@ const portfolioData = {
         "Feature engineering and outlier handling",
         "Comparison of multiple regression algorithms"
       ],
-      github: "[GITHUB REPO URL]",
+      github: "https://github.com/razesoni/California_Housing_Price_Prediction",
       liveDemo: "",
       featured: true,
       details: {
@@ -105,18 +105,18 @@ const portfolioData = {
       }
     },
     {
-      title: "RAG-Based AI Teaching Assistant",
+      title: "Generative-AI-Course-Context-Engine",
       description: "[PROJECT DESCRIPTION] — an AI-powered application that converts lecture audio into text and uses retrieval-augmented generation to answer questions with context-aware responses.",
       image: "assets/images/project-rag.jpg",
-      technologies: ["Python", "Whisper", "LLMs", "RAG", "Embeddings"],
+      technologies: ["Python", "Whisper", "LLMs", "RAG", "Embeddings", "Flask", "ffmpeg"],
       filterTags: ["AI", "Machine Learning"],
       keyFeatures: [
         "Audio-to-text transcription pipeline",
         "Vector search over lecture transcripts",
         "Context-aware question answering"
       ],
-      github: "[GITHUB REPO URL]",
-      liveDemo: "[LIVE DEMO URL]",
+      github: "https://github.com/razesoni/Generative-AI-Course-Context-Engine",
+      liveDemo: "https://github.com/razesoni/Generative-AI-Course-Context-Engine",
       featured: true,
       details: {
         problem: "[PROBLEM STATEMENT]",
@@ -130,7 +130,7 @@ const portfolioData = {
       }
     },
     {
-      title: "Game Analytics Dashboard",
+      title: "Freemium-Gaming-Monetization-Player-Retention ",
       description: "[PROJECT DESCRIPTION] — an interactive dashboard analyzing player behavior, retention, monetization, and engagement metrics.",
       image: "assets/images/project-dashboard.jpg",
       technologies: ["Python", "Pandas", "Plotly", "Flask"],
@@ -140,8 +140,8 @@ const portfolioData = {
         "Retention and funnel visualizations",
         "Lightweight Flask backend serving processed metrics"
       ],
-      github: "[GITHUB REPO URL]",
-      liveDemo: "[LIVE DEMO URL]",
+      github: "https://github.com/razesoni/Freemium-Gaming-Monetization-Player-Retention",
+      liveDemo: "https://freemium-gaming-monetization-player.onrender.com/",
       featured: true,
       details: {
         problem: "[PROBLEM STATEMENT]",
@@ -187,17 +187,39 @@ const portfolioData = {
    * ------------------------------------------------------- */
   education: [
     {
-      degree: "B.Tech in [Specialization]",
-      institution: "[COLLEGE NAME]",
-      duration: "[Start Year] – [End Year]",
-      score: "", // e.g. "CGPA: 0.00 / 10" — leave blank to hide
+      degree: "B.Tech in Computer Science & Engineering]",
+      institution: "Bhilai Institute of Technology, Raipur",
+      duration: "2023 – 2027",
+      score: "6.67", // e.g. "CGPA: 0.00 / 10" — leave blank to hide
       coursework: [
-        "Machine Learning",
+        "Computer Science Fundamentals",
+        "Mathematics",
         "Data Structures",
-        "Database Management",
-        "Statistics",
-        "Artificial Intelligence",
+        "Data Science",
         "Web Development"
+      ]
+    },
+    {
+      degree: "Senior Secondary Education (12th Grade)",
+      institution: "Vig English School, Jamshedpur",
+      duration: "2022 – 2023",
+      score: "88.0%", // e.g. "CGPA: 0.00 / 10" — leave blank to hide
+      coursework: [
+        "Mathematics",
+        "English",
+        "Computer Science",
+      ]
+    },
+    {
+      degree: "Secondary Education (10th Grade)",
+      institution: "Vig English School, Jamshedpur",
+      duration: "2020 – 2021",
+      score: "70.0%", // e.g. "CGPA: 0.00 / 10" — leave blank to hide
+      coursework: [
+        "Mathematics",
+        "English",
+        "Science",
+        "Computer Science",
       ]
     }
   ],
