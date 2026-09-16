@@ -1,252 +1,95 @@
-/**
- * ============================================================
- *  PORTFOLIO DATA — edit this file to update your content.
- *  Nothing in css/ or the rendering logic in main.js needs to
- *  change when you edit the values below.
- * ============================================================
- */
-
 const portfolioData = {
-
-  /* ---------------------------------------------------------
-   *  PERSONAL
-   * ------------------------------------------------------- */
   personal: {
     name: "Akash Kumar Singh",
-    role: "Data Scientist & Machine Learning Enthusiast",
-    tagline: "I build data-driven applications, machine learning solutions, and intelligent systems that solve real-world problems.",
+    role: "Data Scientist & Machine Learning Engineer",
+    tagline: "I turn complex data into useful products—from retrieval systems and video intelligence to predictive models and product analytics.",
     location: "Jamshedpur, India",
     email: "akash27590@gmail.com",
-    profileImage: "assets/images/profile.jpg",
     resume: "assets/resume/akash_resume.pdf",
-    availability: "Open to Opportunities",
-    aboutParagraphs: [
-      "I'm a final-year B.Tech student who spends more time in Jupyter notebooks than I probably should, currently focused on data science, machine learning, and building software that actually gets used rather than just demoed.",
-      "I like the part of a project where messy, real-world data slowly turns into something a model — or a person — can act on. Cleaning a dataset until it finally makes sense is oddly satisfying.",
-      "Right now I'm strengthening my foundations in machine learning, data analysis, backend development, and applied AI, while shipping small end-to-end projects instead of only reading about them."
-    ],
-    quickFacts: [
-      { label: "Education", value: "B.Tech" },
-      { label: "Specialization", value: "Computer Science & Engineering" },
-      { label: "Location", value: "Jamshedpur, India" },
-      { label: "Focus", value: "ML · Data Science · AI" },
-      { label: "Hobbies", value: "Art & Illustration" },
-      { label: "Availability", value: "Open to Opportunities" }
-    ]
+    availability: "Open to internships and entry-level roles",
+    about: "Final-year Computer Science student focused on applied machine learning, data products, and AI systems. I enjoy working across the full project lifecycle: shaping a problem, cleaning data, evaluating models, building APIs, and presenting results clearly."
   },
-
-  /* ---------------------------------------------------------
-   *  SOCIAL / PROFILES
-   *  Leave a value empty ("") to hide that link automatically.
-   * ------------------------------------------------------- */
   social: {
     github: "https://github.com/razesoni",
     linkedin: "https://www.linkedin.com/in/akash-kumar-277750337",
-    email: "akash27590@gmail.com",
-    kaggle: "https://www.kaggle.com/razesoni",
-    leetcode: "",
-    hackerrank: "",
-    codechef: ""
+    kaggle: "https://www.kaggle.com/razesoni"
   },
-
-  /* ---------------------------------------------------------
-   *  SKILLS
-   * ------------------------------------------------------- */
-  skills: {
-    programming: ["Python", "JavaScript", "SQL"],
-    dataScience: ["Pandas", "NumPy", "Matplotlib", "Seaborn", "Scikit-learn"],
-    machineLearning: ["Regression", "Classification", "Clustering", "Feature Engineering", "Model Evaluation", "Hyperparameter Tuning"],
-    ai: ["LLMs", "RAG", "Embeddings", "Whisper", "Generative AI", "NLP"],
-    webDevelopment: ["HTML", "CSS", "JavaScript", "Flask", "REST APIs"],
-    tools: ["Git", "GitHub", "Jupyter", "VS Code", "Docker", "Postman"]
-  },
-
-  /* Icon key must match a name defined in ICONS inside js/main.js */
-  skillCategoryMeta: {
-    programming:     { title: "Programming",        icon: "code-2" },
-    dataScience:      { title: "Data Science",        icon: "bar-chart-3" },
-    machineLearning:  { title: "Machine Learning",     icon: "brain-circuit" },
-    ai:               { title: "AI / NLP",             icon: "sparkles" },
-    webDevelopment:    { title: "Web Development",      icon: "layout-grid" },
-    tools:            { title: "Tools",                icon: "wrench" }
-  },
-
-  /* ---------------------------------------------------------
-   *  PROJECTS
-   *  filterTags values power the filter bar. Add/remove
-   *  projects freely — the UI renders whatever is here.
-   * ------------------------------------------------------- */
-  projectFilters: ["All", "Data Science", "Machine Learning", "AI", "Web Development", "Analytics"],
-
+  capabilities: [
+    { title: "Applied AI", skills: ["RAG", "LLMs", "Whisper", "Embeddings", "Semantic Search"] },
+    { title: "Machine Learning", skills: ["Scikit-learn", "Feature Engineering", "Model Evaluation", "NLP", "Computer Vision"] },
+    { title: "Data & Analytics", skills: ["Python", "Pandas", "NumPy", "SQL", "Product Analytics"] },
+    { title: "Product Engineering", skills: ["FastAPI", "Flask", "REST APIs", "JavaScript", "Git", "Docker"] }
+  ],
+  training: [
+    {
+      role: "Vocational Trainee - AI Powered Data Analytics with Python & Advanced Excel",
+      organization: "RAYS IT & Design World Pvt. Ltd.",
+      location: "Raipur, Chhattisgarh",
+      period: "June 2026 - July 2026",
+      summary: "Applied Python, Pandas, NumPy, Advanced Excel, Power Query, and Power Pivot to data cleaning, exploratory analysis, and automated business reporting.",
+      highlight: "Built the Freemium Gaming Monetization & Player Retention capstone with interactive dashboards and player behavior metrics."
+    },
+    {
+      role: "Vocational Trainee - Web Development with Python & Django",
+      organization: "RAYS IT & Design World Pvt. Ltd.",
+      location: "Raipur, Chhattisgarh",
+      period: "June 2025 - July 2025",
+      summary: "Developed full-stack applications with Python, Django, relational databases, ORM patterns, and RESTful APIs.",
+      highlight: "Structured backend models, views, and templates using standard software development lifecycle practices."
+    }
+  ],
+  education: [
+    { qualification: "B.Tech in Computer Science and Engineering", institution: "Bhilai Institute of Technology", location: "Raipur, Chhattisgarh", period: "2023 - 2027 (Expected)", result: "CGPA: 6.8" },
+    { qualification: "Senior Secondary Examination (Class XII)", institution: "Vig English School", location: "Jamshedpur, Jharkhand", period: "2023", result: "88.0%" },
+    { qualification: "Secondary School Examination (Class X)", institution: "Vig English School", location: "Jamshedpur, Jharkhand", period: "2021", result: "70.0%" }
+  ],
+  certifications: [
+    { name: "The Ultimate Job Ready Data Science Course", issuer: "CodeWithHarry" },
+    { name: "Complete 2025 Python Bootcamp", issuer: "CodeWithHarry" }
+  ],
   projects: [
     {
-      title: "Housing Price Prediction",
-      description: "[PROJECT DESCRIPTION] — a regression project that predicts housing prices from property-related features such as location, size, and amenities.",
-      image: "assets/images/project-housing.jpg",
-      technologies: ["Python", "Pandas", "NumPy", "Scikit-learn", "Matplotlib"],
-      filterTags: ["Machine Learning", "Data Science"],
-      keyFeatures: [
-        "End-to-end pipeline from raw data to trained model",
-        "Feature engineering and outlier handling",
-        "Comparison of multiple regression algorithms"
-      ],
-      github: "https://github.com/razesoni/California_Housing_Price_Prediction",
-      liveDemo: "",
-      featured: true,
-      details: {
-        problem: "[PROBLEM STATEMENT]",
-        approach: "[YOUR APPROACH]",
-        dataset: "[DATASET SOURCE]",
-        preprocessing: "[PREPROCESSING STEPS]",
-        eda: "[KEY EDA FINDINGS]",
-        model: "[MODEL / ARCHITECTURE USED]",
-        results: "[RESULTS]",
-        insights: "[KEY INSIGHTS]"
-      }
+      title: "AniSense AI", type: "AI Video Intelligence",
+      description: "Transforms long videos into searchable knowledge with transcription, hybrid retrieval, reranking, timestamped insights, and multi-stage AI summaries.",
+      impact: "Built a complete ingestion-to-search pipeline with production-minded validation and a FastAPI web experience.",
+      technologies: ["FastAPI", "Groq", "Gemini", "ChromaDB", "BM25", "Sentence Transformers"],
+      github: "https://github.com/razesoni/Anisense-AI-Video-Intelligence", featured: true
     },
     {
-      title: "Generative-AI-Course-Context-Engine",
-      description: "[PROJECT DESCRIPTION] — an AI-powered application that converts lecture audio into text and uses retrieval-augmented generation to answer questions with context-aware responses.",
-      image: "assets/images/project-rag.jpg",
-      technologies: ["Python", "Whisper", "LLMs", "RAG", "Embeddings", "Flask", "ffmpeg"],
-      filterTags: ["AI", "Machine Learning"],
-      keyFeatures: [
-        "Audio-to-text transcription pipeline",
-        "Vector search over lecture transcripts",
-        "Context-aware question answering"
-      ],
-      github: "https://github.com/razesoni/Generative-AI-Course-Context-Engine",
-      liveDemo: "https://github.com/razesoni/Generative-AI-Course-Context-Engine",
-      featured: true,
-      details: {
-        problem: "[PROBLEM STATEMENT]",
-        approach: "[YOUR APPROACH]",
-        dataset: "[DATASET SOURCE]",
-        preprocessing: "[PREPROCESSING STEPS]",
-        eda: "[KEY EDA FINDINGS]",
-        model: "[MODEL / ARCHITECTURE USED]",
-        results: "[RESULTS]",
-        insights: "[KEY INSIGHTS]"
-      }
+      title: "Course Context Engine", type: "Local RAG System",
+      description: "An offline teaching assistant that transcribes Hindi and Hinglish lectures, retrieves relevant segments, and answers questions with source timestamps.",
+      impact: "Combines Whisper, BGE-M3 embeddings, cosine retrieval, Llama 3.2, quizzes, and a FastAPI interface while keeping course data local.",
+      technologies: ["Python", "Whisper", "Ollama", "BGE-M3", "Llama 3.2", "FastAPI"],
+      github: "https://github.com/razesoni/Generative-AI-Course-Context-Engine", featured: true
     },
     {
-      title: "Freemium-Gaming-Monetization-Player-Retention ",
-      description: "[PROJECT DESCRIPTION] — an interactive dashboard analyzing player behavior, retention, monetization, and engagement metrics.",
-      image: "assets/images/project-dashboard.jpg",
-      technologies: ["Python", "Pandas", "Plotly", "Flask"],
-      filterTags: ["Analytics", "Web Development"],
-      keyFeatures: [
-        "Interactive filters across time ranges and cohorts",
-        "Retention and funnel visualizations",
-        "Lightweight Flask backend serving processed metrics"
-      ],
+      title: "Freemium Gaming Analytics", type: "Product Analytics",
+      description: "Analyzes monetization drivers and retention risks across roughly 3,000 players using purchase telemetry, engagement signals, and cohorts.",
+      impact: "Turns ARPU, ARPPU, revenue concentration, and conversion latency into prioritized experiments for offers, bundles, and retention.",
+      technologies: ["Python", "Pandas", "Flask", "Cohort Analysis", "pytest"],
       github: "https://github.com/razesoni/Freemium-Gaming-Monetization-Player-Retention",
-      liveDemo: "https://freemium-gaming-monetization-player.onrender.com/",
-      featured: true,
-      details: {
-        problem: "[PROBLEM STATEMENT]",
-        approach: "[YOUR APPROACH]",
-        dataset: "[DATASET SOURCE]",
-        preprocessing: "[PREPROCESSING STEPS]",
-        eda: "[KEY EDA FINDINGS]",
-        model: "[MODEL / ARCHITECTURE USED]",
-        results: "[RESULTS]",
-        insights: "[KEY INSIGHTS]"
-      }
-    }
-
-    /* Add more project objects here. Set featured: true to pin
-       a project to the top row. Anything beyond the first four
-       is tucked behind "View All Projects". */
-  ],
-
-  /* ---------------------------------------------------------
-   *  EXPERIENCE
-   *  Leave the array empty to show the "currently building
-   *  practical projects" fallback message instead.
-   * ------------------------------------------------------- */
-  experience: [
-    /* Example — replace or remove:
-    {
-      role: "Machine Learning Intern",
-      company: "[COMPANY NAME]",
-      duration: "[Month Year] – [Month Year]",
-      location: "[LOCATION]",
-      description: "[ROLE DESCRIPTION]",
-      technologies: ["Python", "Scikit-learn"],
-      achievements: [
-        "[ACHIEVEMENT]",
-        "[ACHIEVEMENT]"
-      ]
-    }
-    */
-  ],
-
-  /* ---------------------------------------------------------
-   *  EDUCATION
-   * ------------------------------------------------------- */
-  education: [
-    {
-      degree: "B.Tech in Computer Science & Engineering]",
-      institution: "Bhilai Institute of Technology, Raipur",
-      duration: "2023 – 2027",
-      score: "6.67", // e.g. "CGPA: 0.00 / 10" — leave blank to hide
-      coursework: [
-        "Computer Science Fundamentals",
-        "Mathematics",
-        "Data Structures",
-        "Data Science",
-        "Web Development"
-      ]
+      live: "https://freemium-gaming-monetization-player.onrender.com/", featured: true
     },
     {
-      degree: "Senior Secondary Education (12th Grade)",
-      institution: "Vig English School, Jamshedpur",
-      duration: "2022 – 2023",
-      score: "88.0%", // e.g. "CGPA: 0.00 / 10" — leave blank to hide
-      coursework: [
-        "Mathematics",
-        "English",
-        "Computer Science",
-      ]
+      title: "Student Mental Health Prediction", type: "End-to-end ML Application",
+      description: "Predicts a student mental health score from social media behavior, academic context, sleep, activity, and stress indicators.",
+      impact: "Packages a tuned Random Forest pipeline behind a validated FastAPI endpoint with an interactive browser interface.",
+      technologies: ["Random Forest", "FastAPI", "Pydantic", "Pandas", "JavaScript"],
+      github: "https://github.com/razesoni/Student-Mental-Health-Score-Prediction"
     },
     {
-      degree: "Secondary Education (10th Grade)",
-      institution: "Vig English School, Jamshedpur",
-      duration: "2020 – 2021",
-      score: "70.0%", // e.g. "CGPA: 0.00 / 10" — leave blank to hide
-      coursework: [
-        "Mathematics",
-        "English",
-        "Science",
-        "Computer Science",
-      ]
-    }
-  ],
-
-  /* ---------------------------------------------------------
-   *  CERTIFICATIONS
-   *  Leave the array empty to hide this section entirely.
-   * ------------------------------------------------------- */
-  certifications: [
-    /* Example — replace or remove:
+      title: "Resume Category Classification", type: "Responsible NLP",
+      description: "Classifies resumes into topic categories with TF-IDF and Random Forest using an evaluation flow designed to prevent train-test leakage.",
+      impact: "Documents model limits clearly and keeps oversampling inside the training split for more credible evaluation.",
+      technologies: ["NLP", "TF-IDF", "Random Forest", "Jupyter", "Scikit-learn"],
+      github: "https://github.com/razesoni/Resume-Screening-App"
+    },
     {
-      name: "[Certification Name]",
-      organization: "[Issuing Organization]",
-      date: "[Year]",
-      credentialId: "",
-      url: ""
+      title: "Sports Person Classifier", type: "Computer Vision",
+      description: "Detects faces and classifies sports personalities using image preprocessing, wavelet features, and model comparison.",
+      impact: "Compares SVM, Random Forest, and Logistic Regression with grid search and reusable model artifacts.",
+      technologies: ["OpenCV", "PyWavelets", "SVM", "Grid Search", "Python"],
+      github: "https://github.com/razesoni/Sports-Person-Image-Classification"
     }
-    */
-  ],
-
-  /* ---------------------------------------------------------
-   *  ACHIEVEMENTS
-   *  Leave empty to hide this section entirely.
-   * ------------------------------------------------------- */
-  achievements: [
-    /* Example — replace or remove:
-    { title: "[Achievement]", context: "[Hackathon / Competition / Kaggle / etc.]", date: "[Year]" }
-    */
   ]
 };
